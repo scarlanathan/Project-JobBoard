@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Pôle Epitech{% endblock %}</title>
+        <link rel="icon" type="image/png" href="{{ asset('Image/PoleEpitech.png') }}">
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+        {% include 'header.html.twig' %}
+        {% block body %}{% endblock %}
+        {% include 'footer.html.twig' %}
+    </body>
+</html>

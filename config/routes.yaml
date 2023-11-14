@@ -1,0 +1,169 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+api_login_check:
+    path: /api/login_check
+    methods: [POST]
+
+api_logout_check:
+    path: /api/logout_check
+    methods: [POST]
+    controller: App\ApiResource\ApiLogoutController::index
+
+api_register_check:
+    path: /api/register
+    methods: [POST]
+    controller: App\ApiResource\ApiRegisterController::register
+
+api_job_categories:
+    path: /api/job_categories
+    methods: [GET]
+    controller: App\ApiResource\ApiJobCategories::find
+
+api_companies_categories:
+    path: /api/companies_categorie
+    methods: [GET]
+    controller: App\ApiResource\ApiCompanieCategorie::get_categorie
+
+api_get_user:
+    path: /api/get_user
+    methods: [GET]
+    controller: App\ApiResource\ApiGetUserInfo::get_user
+
+api_get_userProfile:
+    path: /api/get_user_profile
+    methods: [GET]
+    controller: App\ApiResource\ApiGetUserInfo::get_user_profile
+
+api_get_userProfile_byid:
+    path: /api/get_user_profilebyid
+    methods: [GET]
+    controller: App\ApiResource\ApiGetUserInfo::get_user_profilebyid
+
+api_update_userProfile:
+    path: /api/update_user_profile
+    methods: [POST]
+    controller: App\ApiResource\ApiGetUserInfo::update_user_profile
+
+api_upload_cv:
+    path: /api/upload_cv
+    methods: [ POST ]
+    controller: App\ApiResource\ApiGetUserInfo::uploadCv
+
+api_get_companieProfile:
+    path: /api/get_companie_profile
+    methods: [GET]
+    controller: App\ApiResource\ApiGetCompaniesInfo::get_Companie_profile
+
+api_update_companieProfile:
+    path: /api/update_companie_profile
+    methods: [POST]
+    controller: App\ApiResource\ApiGetCompaniesInfo::update_companie_profile
+
+api_user_messages:
+    path: /api/get_user_messages
+    methods: [GET]
+    controller: App\ApiResource\ApiMessages::get_messages
+
+api_getMessageBy_Id:
+    path: /api/get_message_byid
+    methods: [ GET ]
+    controller: App\ApiResource\ApiMessages::get_messageById
+
+api_send_message:
+    path: /api/send_message
+    methods: [ POST ]
+    controller: App\ApiResource\ApiMessages::send_message
+
+api_createAd:
+    path: /api/create_ad
+    methods: [ POST ]
+    controller: App\ApiResource\ApiAdvertisemants::create_ad
+
+api_getAd:
+    path: /api/get_ad
+    methods: [ GET ]
+    controller: App\ApiResource\ApiAdvertisemants::get_ad
+
+api_getAd_byId:
+    path: /api/get_ad_byid
+    methods: [ GET ]
+    controller: App\ApiResource\ApiAdvertisemants::get_ad_byid
+
+api_getAd_byname:
+    path: /api/get_ad_byname
+    methods: [ GET ]
+    controller: App\ApiResource\ApiAdvertisemants::get_ad_byname
+
+api_get_user_candidate:
+    path: /api/get_user_candidate
+    methods: [ GET ]
+    controller: App\ApiResource\ApiCandidatesCompanies::get_candidates_user
+
+api_update_ad:
+    path: /api/update_ad
+    methods: [ POST ]
+    controller: App\ApiResource\ApiAdvertisemants::update_ad
+
+api_delete_ad:
+    path: /api/delete_ad
+    methods: [ POST ]
+    controller: App\ApiResource\ApiAdvertisemants::delete_ad
+
+api_delete_job_category:
+    path: /api/delete_job_category
+    methods: [ POST ]
+    controller: App\ApiResource\ApiAdvertisemants::delete_job_category
+
+api_add_job_category:
+    path: /api/add_job_category
+    methods: [ POST ]
+    controller: App\ApiResource\ApiAdvertisemants::add_job_category
+
+api_delete_message:
+    path: /api/delete_message
+    methods: [ POST ]
+    controller: App\ApiResource\ApiMessages::delete_message
+
+api_set_ad_user:
+    path: /api/set_user_candidate
+    methods: [ POST ]
+    controller: App\ApiResource\ApiAdvertisemants::set_candidate_user
+
+api_set_ad_anonymous:
+    path: /api/set_anonymous_candidate
+    methods: [ POST ]
+    controller: App\ApiResource\ApiAdvertisemants::set_candidate_anonymous
+
+## Contact
+
+api_send_contact:
+    path: /api/contact
+    methods: [ POST ]
+    controller: App\ApiResource\ApiContact::send_content
+
+## Recherche
+api_recherche_job:
+    path: /api/recherche_job
+    methods: [ GET ]
+    controller: App\ApiResource\ApiRecherches::get_job
+
+api_recherche_jobByid:
+    path: /api/recherche_job_byid
+    methods: [ GET ]
+    controller: App\ApiResource\ApiRecherches::get_jobById
+
+api_getprofile_anonymous:
+    path: /api/get_profile_anonymous
+    methods: [ GET ]
+    controller: App\ApiResource\ApiCandidatesCompanies::get_profile_anonymous
+
+api_getcv_anonymous:
+    path: /api/get_profile_anonymous_cv
+    methods: [ GET ]
+    controller: App\ApiResource\ApiCandidatesCompanies::get_cv_anonymous
+
+

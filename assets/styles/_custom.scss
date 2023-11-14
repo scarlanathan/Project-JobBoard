@@ -1,0 +1,151 @@
+.cursor-pointer{
+  cursor: pointer;
+  transition: 0.3s all linear;
+  color: black;
+}
+
+.cursor-pointer:hover{
+  background-color: rgba(16, 53, 192, 0.43);
+  color: white;
+}
+
+.font-image-index{
+  background: url("/public/images/emploi.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 95vh;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+header{
+  //position: sticky;
+  //top: 0;
+  //z-index: 999;
+  //background: white;
+
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: white;
+}
+
+.user-dropdown{
+  position: relative;
+}
+
+.user-dropdown-item{
+  position: absolute;
+  z-index: 980;
+  left: 0;
+  top: 56px;
+  background: white;
+  width: 100%;
+}
+
+.user-dropdown-item li{
+  padding: 10px;
+  list-style: none;
+}
+
+.my-fade-enter-active,
+.my-fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.my-fade-enter, .my-fade-leave-to {
+  opacity: 0;
+}
+
+.blur{
+  background: rgba(255, 255, 255, 0.16) no-repeat bottom;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  margin-top: 50px;
+  position: relative;
+  top: 70px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.hotkey{
+  list-style: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  background: white;
+  transition: 0.2s linear;
+}
+
+.hotkey:hover{
+  background: #0a53be;
+  color: white;
+  padding: 12px 22px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+
+}
+
+.loading-blur{
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background: rgba(253, 253, 253, 0.1);
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.send-message{
+  position: absolute;
+  z-index: 999;
+  width: 50%;
+  height: auto;
+  bottom: 0;
+  right: 10px;
+  background: white;
+  border-radius: 15px;
+  border: 1px rgba(0, 0, 0, 0.4) solid;
+  padding: 20px;
+}
+
+.button-close{
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
+
+.button-message{
+  position: absolute;
+  top: 180px;
+  right: 50px;
+}
+
+.box-content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background: rgba(253, 253, 253, 0.1);
+  border: 1px rgba(0, 0, 0, 0.44) solid;
+}

@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProfileController!{% endblock %}
+
+{% block body %}
+    {% if is_companie %}
+        <div {{ vue_component('ProfilecompanieCompent')}}></div>
+    {% else %}
+        <div {{ vue_component('ProfileUserComponent')}}></div>
+    {% endif %}
+
+
+
+{% endblock %}

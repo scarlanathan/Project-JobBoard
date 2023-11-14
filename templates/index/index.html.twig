@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pôle Epitech{% endblock %}
+
+
+{% block body %}
+
+    <main {{ vue_component('IndexComponent')}} class="font-image-index section-index" style="margin: 0 auto;"></main>
+    <div {{ vue_component('IndexMainComponent')}}></div>
+
+{#    <div class="px-4 py-5 my-5 text-center">#}
+{#        <img class="d-block mx-auto mb-4" src="" alt="" width="200" height="200">#}
+{#        <h1 class="display-5 fw-bold text-body-emphasis">FC Chomage</h1>#}
+{#        <div class="col-lg-6 mx-auto">#}
+{#            <p class="lead mb-4">Plus de 10 000 offres, du stage au premier emploi</p>#}
+{#            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">#}
+{#                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>#}
+{#                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+
+{#    <div class="container col-xxl-8 px-4 py-5">#}
+{#        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">#}
+{#            <div class="col-10 col-sm-8 col-lg-6">#}
+{#                <img src="https://upload.wikimedia.org/wikipedia/fr/6/68/Logo_JO_d%27%C3%A9t%C3%A9_-_Paris_2024.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">#}
+{#            </div>#}
+{#            <div class="col-lg-6">#}
+{#                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Find your way</h1>#}
+{#                <p class="lead">Submit your resume</p>#}
+{#                <div class="d-grid gap-2 d-md-flex justify-content-md-start">#}
+{#                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">SEND</button>#}
+{#                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Find an advertisement</button>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+
+
+
+{% endblock %}
